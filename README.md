@@ -1,2 +1,1 @@
-# MAKR
-my website @ makr.org
+Check it out @ [makr.org](https://makr.org)
