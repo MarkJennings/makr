@@ -27,26 +27,35 @@ function mobileScale() {
 mobileScale();
 */
 
-// Find matches
-var mql = window.matchMedia("(orientation: portrait)");
+// True if mobile browser or device detected
+var mobile = (/Mobi|Android/i.test(navigator.userAgent));
+let root = document.documentElement;
+if (mobile) {
+    // Initialize media query list monitoring orientation
+    var mql = window.matchMedia("(orientation: portrait)");
 
-// If there are matches, we're in portrait
-if(mql.matches) {  
-    // Portrait orientation
-    window.alert("portrait");
-} else {  
-    // Landscape orientation
-    window.alert("landscape");
+    // If there are matches, we're in portrait
+    if(mql.matches) {  
+        // Portrait orientation
+        window.alert("portrait");
+        makePortrait();
+    } else {  
+        // Landscape orientation
+        window.alert("landscape");
+        makeLandscape();
+    }
+
+    // Add a media query change listener
+    mql.addListener(function(m) {
+        if(m.matches) {
+            // Changed to portrait
+            window.alert("changed to portrait");
+            makePortrait();
+        }
+        else {
+            // Changed to landscape
+            window.alert("changed to landscape");
+            makeLandscape();
+        }
+    });
 }
-
-// Add a media query change listener
-mql.addListener(function(m) {
-    if(m.matches) {
-        // Changed to portrait
-        window.alert("changed to portrait");
-    }
-    else {
-        // Changed to landscape
-        window.alert("changed to landscape");
-    }
-});
