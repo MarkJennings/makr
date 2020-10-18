@@ -1,7 +1,8 @@
 // This function detects mobile devices and scales appropriately
 // Mobile detection: https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent
-// Device orientation: http://www.williammalone.com/articles/html5-javascript-ios-orientation
+// Device orientation: https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia
 // JS variables to CSS: https://css-tricks.com/updating-a-css-variable-with-javascript
+/*
 function mobileScale() {
     // True if mobile browser or device detected
     var mobile = (/Mobi|Android/i.test(navigator.userAgent));
@@ -24,3 +25,28 @@ function mobileScale() {
 }
 // Run the function before page starts loading!
 mobileScale();
+*/
+
+// Find matches
+var mql = window.matchMedia("(orientation: portrait)");
+
+// If there are matches, we're in portrait
+if(mql.matches) {  
+    // Portrait orientation
+    window.alert("portrait");
+} else {  
+    // Landscape orientation
+    window.alert("landscape");
+}
+
+// Add a media query change listener
+mql.addListener(function(m) {
+    if(m.matches) {
+        // Changed to portrait
+        window.alert("changed to portrait");
+    }
+    else {
+        // Changed to landscape
+        window.alert("changed to portrait");
+    }
+});
