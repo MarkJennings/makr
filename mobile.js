@@ -47,6 +47,6 @@ mql.addListener(function(m) {
     }
     else {
         // Changed to landscape
-        window.alert("changed to portrait");
+        window.alert("changed to landscape");
     }
 });
