@@ -30,61 +30,57 @@
 
 <div class="cluster">
     <div class="images">
-        <div class="pic"><img src="images/hopper-team.jpg" title="Capstone Team" alt="Capstone Team" style="width:60%"></div>
+        <div class="pic"><img src="images/hopper-team.png" title="Capstone Team" alt="Capstone Team" style="width:60%"></div>
     </div>
 </div>
 
 <div class="textbox">
-    <p>One of the best parts of this experience was our advisors. Dr. Scott Fish was the former Chief Scientist for the Army. He is incredibly sharp, lively, and an absolute pleasure to work with. Dr. Joseph Beaman helped invent SLS printing, a process which has changed the manufacturing world.</p><br>
-    <p>The original hopper system, seen below, had several flaws. Since the powder was extremely fine and spherical on the microscopic level, it was difficult to contain. It constantly leaked, coating the lab in dust. This was a safety hazard as well as cost-intensive when more exotic feedstock was used. The notched roller within the hopper was intended to dispense equal amounts to powder every cycle, similar to a toothpick dispenser, but the mechanism didn’t release consistent amounts and powder often clogged along its grooves.</p>
+    <p>The original hopper system, seen below, had several flaws. Since the powder was extremely fine, it was difficult to contain. The notched roller within the hopper was intended to dispense equal amounts to powder every cycle, similar to a toothpick dispenser, but the mechanism was not reliable and often clogged along its grooves.</p>
 </div>
 
 <div class="center">
     <div class="images">
-        <img src="images/hopper-old-iso.jpg" title="Old Hopper" alt="Old Hopper" style="width:45%" class="pic">
-        <img src="images/hopper-old-section.png" title="Roller Section" alt="Roller Section" style="width:45%" class="pic">
+        <img src="images/hopper-old.png" title="Old Hopper" alt="Old Hopper" style="width:60%" class="pic">
     </div>
 </div>
 
 <div class="textbox">
-    <p>After several weeks of concept generation, we came up with 3 prototypes, shown below. The first was our control, matching the original hopper design. The second was a modification of this design, where the roller picked up powder from the side, reducing the packing force of the powder in the hopper to mitigate clumping in the grooves. For these two designs, we also experimented with different groove geometries, such as tight corners vs. rounding edges. Our third design attempted to negate the effect of gravity on powder leakage, as well as introduce planar rather than cylindrical sealing. This simple mechanism had a sliding plate that filled with powder and dropped it when linearly displaced.</p>
+    <p>After weeks of concept generation, we came up with 3 prototypes, shown below. The first was our control, matching the original hopper design. The second was a modification of this design, where the roller picked up powder from the side, reducing the packing force of the powder in the hopper to mitigate clumping. Our third design attempted to negate the effect of gravity on powder leakage, as well as introduce planar rather than cylindrical sealing. This simple mechanism had a sliding plate that filled with powder and dropped it when linearly displaced.</p>
 </div>
 
 <div class="cluster">
     <div class="images">
-        <div class="pic"><img src="images/hopper-prototypes.jpg" title="Experimental Prototypes" alt="Experimental Prototypes" style="width:90%"></div>
+        <div class="pic"><img src="images/hopper-prototypes.png" title="Experimental Prototypes" alt="Experimental Prototypes" style="width:60%"></div>
     </div>
 </div>
 
 <div class="textbox">
-    <p>Our experiments highlighted some of the benefits of the sliding mechanism, so we decided to pursue this design. Since this was a new concept, we decided to build a desktop model rather than implementing it on the actual machine without prior testing. This would ensure that the SLS printer would remain operational even if there were flaws in our design. After some engineering analysis, we started our design and decided to actuate the sliding plate with a rack and pinion and a simple PD controller.</p>
+    <p>Our experiments highlighted some of the benefits of the sliding mechanism, so we decided to pursue this design. Since this was a new concept, we decided to build a desktop model rather than implementing it on the actual machine. After some engineering analysis, we started our design and decided to actuate the sliding plate with a rack and pinion on a simple PD controller.</p>
 </div>
 
 <div class="center">
     <div class="images">
-        <img src="images/hopper-new-iso.png" title="New Hopper CAD" alt="New Hopper CAD" style="width:45%" class="pic">
-        <img src="images/hopper-new-real.png" title="New Hopper" alt="New Hopper" style="width:45%" class="pic">
+        <img src="images/hopper-new.png" title="New Hopper" alt="New Hopper" style="width:60%" class="pic">
     </div>
 </div>
 
 <div class="textbox">
-    <p>Since the original hopper had issues with powder clumping, we added a clearing mechanism which would ensure powder was clear of the sliding plate with a punching mechanism. A section view of this mechanism as well as an animation of the actuated subsystem are shown below.</p>
+    <p>Since the original hopper had issues with powder clumping, we added a clearing mechanism which would ensure powder was clear of the sliding plate with a punching mechanism:</p>
 </div>
 
 <div class="cluster">
     <div class="images">
-        <div class="pic"><img src="images/hopper-puncher.png" title="Puncher Mechanism" alt="Puncher Mechanism" style="width:60%"></div>
         <div class="pic"><img src="images/hopper-puncher.gif" title="Puncher Actuation" alt="Puncher Actuation" style="width:60%"></div>
     </div>
 </div>
 
 <div class="textbox">
-    <p>This benchtop model was succesful, dispensing uniform amounts of powder and logging useful data. One of the parameters we wanted to monitor was friction due to powder build-up on the sliding plate. We measured the main motor current and discretely integrated it over each cycle time to approximate the energy required per drop. This showed that the required energy increased over our 100-drop experiment. This could probably be reduced with tighter tolerances or brush seals, but it’s probably not an issue if the motor is oversized and the mechanism is regularly cleaned.</p>
+    <p>Our benchtop model was succesful, dispensing uniform amounts of powder and logging useful data, such as mass of powder drops and motor current. We noticed that required power increased throughout our 100-drop experiment. This could probably be reduced with tighter tolerances or brush seals, but it’s probably not an issue if the motor is oversized and the mechanism is regularly cleaned.</p>
 </div>
 
 <div class="cluster">
     <div class="images">
-        <div class="pic"><img src="images/hopper-new-drop.gif" title="Final Experiment" alt="Final Experiment" style="width:60%"></div>
+        <div class="pic"><img src="images/hopper-drop.gif" title="Final Experiment" alt="Final Experiment" style="width:60%"></div>
     </div>
 </div>
 
