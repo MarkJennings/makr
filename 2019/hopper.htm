@@ -25,7 +25,7 @@
 
 <div class="textbox">
     <br><h1>SLS Hopper</h1><br>
-    <p>For my capstone project, I worked closely with 3 other engineering seniors to redesign a powder dispensing system for a selective laser sintering (SLS) 3D printer. We were working on an experimental system developed at UT for research on new materials and fabrication processes.</p>
+    <p>My capstone team was tasked with redesigning a powder dispensing system for a selective laser sintering (SLS) 3D printer.</p>
 </div>
 
 <div class="cluster">
@@ -35,7 +35,7 @@
 </div>
 
 <div class="textbox">
-    <p>The original hopper system, seen below, had several flaws. Since the powder was extremely fine, it was difficult to contain. The notched roller within the hopper was intended to dispense equal amounts to powder every cycle, similar to a toothpick dispenser, but the mechanism was not reliable and often clogged along its grooves.</p>
+    <p>The original hopper system, seen below clogged often, leaked powder all over the lab, and did not dispense a reliable amount of powder.</p>
 </div>
 
 <div class="center">
@@ -45,7 +45,8 @@
 </div>
 
 <div class="textbox">
-    <p>After weeks of concept generation, we came up with 3 prototypes, shown below. The first was our control, matching the original hopper design. The second was a modification of this design, where the roller picked up powder from the side, reducing the packing force of the powder in the hopper to mitigate clumping. Our third design attempted to negate the effect of gravity on powder leakage, as well as introduce planar rather than cylindrical sealing. This simple mechanism had a sliding plate that filled with powder and dropped it when linearly displaced.</p>
+    <p>We came up with 3 prototypes, shown below. The first matched the original hopper design. The second was a modification of this design that reduced the gravitational packing force on the powder to mitigate clumping.</p>
+    <p>Our third design used a sliding plate mechanism to reduce this packing force as well as use a planar seal to prevent leakage.</p>
 </div>
 
 <div class="cluster">
@@ -55,7 +56,7 @@
 </div>
 
 <div class="textbox">
-    <p>Our experiments highlighted some of the benefits of the sliding mechanism, so we decided to pursue this design. Since this was a new concept, we decided to build a desktop model rather than implementing it on the actual machine. After some engineering analysis, we started our design and decided to actuate the sliding plate with a rack and pinion on a simple PD controller.</p>
+    <p>Our experiments highlighted some of the benefits of the sliding mechanism, so we decided to pursue this design. After some engineering analysis, we decided to actuate the sliding plate with a rack and pinion on a simple PD controller.</p>
 </div>
 
 <div class="center">
@@ -65,7 +66,7 @@
 </div>
 
 <div class="textbox">
-    <p>Since the original hopper had issues with powder clumping, we added a clearing mechanism which would ensure powder was clear of the sliding plate with a punching mechanism:</p>
+    <p>Since the original hopper had issues with powder clumping, we added a clearing mechanism which would punch out any powder stuck to the sliding plate:</p>
 </div>
 
 <div class="cluster">
@@ -75,7 +76,7 @@
 </div>
 
 <div class="textbox">
-    <p>Our benchtop model was succesful, dispensing uniform amounts of powder and logging useful data, such as mass of powder drops and motor current. We noticed that required power increased throughout our 100-drop experiment. This could probably be reduced with tighter tolerances or brush seals, but it’s probably not an issue if the motor is oversized and the mechanism is regularly cleaned.</p>
+    <p>Our benchtop model was succesful, dispensing uniform amounts of powder and logging useful data, such as mass of powder drops and motor current. However, we noticed that required power increased throughout our 100-drop experiment. This could probably be reduced with tighter tolerances or brush seals, but it’s probably not an issue if the motor is oversized and the mechanism is regularly cleaned.</p>
 </div>
 
 <div class="cluster">
