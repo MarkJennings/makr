@@ -20,6 +20,7 @@ function mobileScale() {
         root.style.setProperty('--pWidth', 33.33 + "%");
         root.style.setProperty('--bHeight', 15 + "vh");
     }
+    window.alert(window.orientation);
 }
 // Run the function before page starts loading!
 mobileScale();
