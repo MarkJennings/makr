@@ -15,9 +15,9 @@ function makePortrait() {
 }
 function makeLandscape() {
     root.style.setProperty('--titleSize', 170 + "%");
-    root.style.setProperty('--textSize', 105 + "%");
+    root.style.setProperty('--textSize', 100 + "%");
     root.style.setProperty('--pWidth', 33.33 + "%");
-    root.style.setProperty('--bHeight', 15 + "vh");
+    root.style.setProperty('--bHeight', 10 + "vh");
 }
 
 if (mobile) {
