@@ -41,9 +41,16 @@ p  {
     padding: 1%;
     line-height: 0;
     width: 33.33%;
-    /* Once again, modify variable if JS indicates browser is mobile */
+    /* Modify variable if JS indicates browser is mobile */
     width: var(--pWidth);
 }
+
+.project:hover {
+    opacity:0.7;
+    transition:opacity 0.5s;
+}
+
+
 
 /* Includes padding in pic sizing */
 * {box-sizing: border-box}
