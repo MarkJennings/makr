@@ -141,7 +141,6 @@ p  {
     display: inline-block;
     width: 100%;
 }
-.pic {padding: 1%}
 
 /* 2 columns if low width */
 @media screen and (max-width: 600px) {
