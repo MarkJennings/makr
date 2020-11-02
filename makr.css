@@ -144,6 +144,7 @@ p  {
 }
 .pic {
     width: 50%;
+    width: var(--picWidth);
 }
 
 /* 2 columns if low width */
