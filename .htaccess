@@ -1,6 +1,5 @@
 RewriteEngine On
-RewriteRule ^projects/(.*)$ /$1 [L,NC,R]
-RewriteRule ^(?!projects/).*$ projects/$0 [L,NC]
+RewriteRule ^projects/(.*)$ /$1 [L,NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.htm [L,NC]
-ErrorDocument 404 /404.html
+# ErrorDocument 404 /404.html
