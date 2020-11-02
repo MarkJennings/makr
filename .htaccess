@@ -1,5 +1,6 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.htm [NC,L]
+RewriteRule ^projects(/.*|)$ $1 [L,NC]
 
 ErrorDocument 404 /404.html
