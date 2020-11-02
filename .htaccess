@@ -1,8 +1,7 @@
+Options +FollowSymLinks -MultiViews
 RewriteEngine On
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.htm [NC,L]
-<IfModule mod_rewrite.c>
-	RewriteRule ^projects(/.*|)$ $1 [L,NC]
-</IfModule>
-
+RewriteRule ^projects/(.*)$ /$1 [L,NC,R]
 ErrorDocument 404 /404.html
