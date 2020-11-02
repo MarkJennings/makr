@@ -1,7 +1,6 @@
-Options +FollowSymLinks -MultiViews
 RewriteEngine On
-RewriteBase /
 RewriteRule ^projects/(.*)$ /$1 [L,NC,R]
+RewriteRule ^(?!projects/).*$ projects/$0 [L,NC]
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.htm [NC,L]
+RewriteRule ^([^\.]+)$ $1.htm [L,NC]
 ErrorDocument 404 /404.html
