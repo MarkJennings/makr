@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #354045;  
+    background-color: #2a2a2e; /* RGB is 42 42 46 */
     font-family: Sans-Serif;
     color: #f2f7f7;
     margin: 0;
@@ -46,8 +46,8 @@ p  {
 }
 
 .project:hover {
-    opacity:0.7;
-    transition:opacity 0.5s;
+    opacity:0.6;
+    transition:opacity 0.25s;
 }
 
 
@@ -56,15 +56,16 @@ p  {
 * {box-sizing: border-box}
 
 /* Clearfix (clear floats) */
-.year::after {
+.grid_pics::after {
     content: "";
     clear: both;
     display: table;
     text-align: center;
     display: inline-block;
+    margin-top: 2%;
 }
 
-/* Centers each year section */
+/* Centers each grid_pics section */
 .center {
     display: inline-block;
     margin-top: 2%;
@@ -106,7 +107,7 @@ p  {
     text-align: center;
     display: inline-block;
     background-color: #95afb8;
-    color: #354045;
+    color: #2a2a2e;
     margin-top: 2%;
     margin-bottom: 2%;
     padding: 1%;
@@ -119,10 +120,10 @@ p  {
 }
 
 /* Change how resume link is styled */
-.footer a:link {color: #354045}
-.footer a:visited {color: #304045}
-.footer a:hover {color: #506070}
-.footer a:active {color: #506070}
+.footer a:link {color: #2a2a2e}
+.footer a:visited {color: #2a2a2e}
+.footer a:hover {color: #525256}
+.footer a:active {color: #525256}
 
 .textbox {
     text-align: left;
@@ -131,7 +132,7 @@ p  {
     width: 100%;
 }
 
-/* Style clusters of images */
+/* Style clusters of images in a project write-up*/
 .images {
     display: inline-block;
     width: 100%;
@@ -141,6 +142,9 @@ p  {
     display: inline-block;
     width: 100%;
 }
+.pic {
+    width: 50%;
+}
 
 /* 2 columns if low width */
 @media screen and (max-width: 600px) {
@@ -148,14 +152,14 @@ p  {
 }
 /* Stops images from spreading out too much */
 @media screen and (min-width: 800px) {
-    .year {width: 800px;}
+    .grid_pics {width: 800px;}
     .name {width: 800px;}
     .textbox {width: 750px;}
     .images {width: 750px;}
 }
 /* For large screens, such as 4k */
 @media screen and (min-width: 1500px) {
-    .year {width: 60vw;}
+    .grid_pics {width: 60vw;}
     .description{width: 60vw;}
     .name {width: 60vw;}
     .textbox {width: 60vw;}
