@@ -159,10 +159,10 @@ p  {
     .images {width: 750px;}
 }
 /* For large screens, such as 4k */
-/*@media screen and (min-width: 1500px) {
-    .grid_pics {width: 60vw;}
-    .description{width: 60vw;}
-    .name {width: 60vw;}
-    .textbox {width: 60vw;}
-    .images {width: 60vw;}
-}*/
+@media screen and (min-width: 2000px) {
+    .grid_pics {width: 50vw;}
+    .description{width: 50vw;}
+    .name {width: 50vw;}
+    .textbox {width: 50vw;}
+    .images {width: 50vw;}
+}
