@@ -24,15 +24,15 @@ a:active {color: #95afb8}
 h1 {
     text-align: center;
     padding: 2%;
-    font-size: 200%;
+    font-size: 170%;
     font-size: var(--titleSize);
 }
 /* Paragraph style */
 p  {
-    font-size: 150%;
-    font-size: var(--textSize);
     line-height: 1.4em;
     margin-bottom: 2%;
+    font-size: 100%;
+    font-size: var(--textSize);
 }
 
 /* All images have some padding */
