@@ -17,7 +17,7 @@ function makePortrait() {
 function makeLandscape() {
     root.style.setProperty('--titleSize', 170 + "%");
     root.style.setProperty('--textSize', 100 + "%");
-    root.style.setProperty('--pWidth', 33.33 + "%");
+    root.style.setProperty('--pWidth', 33 + "%");
     root.style.setProperty('--bHeight', 10 + "vh");
     root.style.setProperty('--picWidth', 50 + "%");
 }

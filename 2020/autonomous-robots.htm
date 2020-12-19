@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>MAKR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../mobile.js"></script>
+<link rel="stylesheet" type="text/css" href="../makr.css">
+<!-- https://favicon.io/favicon-generator/ -- m, circle, amita, 150 -->
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+<link rel="manifest" href="../favicon/site.webmanifest">
+<!-- Roboto font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- MAKR header -->
+<a href="../">
+<div class="banner">
+    <div class="name">
+        <div class="makr">
+            <div class="letter"><img src="../banner/M.png" style="height:100%"></div>
+            <div class="letter"><img src="../banner/A.png" style="height:100%"></div>
+            <div class="letter"><img src="../banner/K.png" style="height:100%"></div>
+            <div class="letter"><img src="../banner/R.png" style="height:100%"></div>
+        </div>
+    </div>
+</div>
+</a>
+
+<div class="textbox">
+    <br><h1>Autonomous Robots</h1><br>
+    <p>In fall of 2020, I took a computer science course called Autonomous Robots. It focuses on algorithms for mobile robots to enable self-driving capabilities, as well as complementary functions like localization and mapping. We were given a 1/10th scale racecar as our testing platform.</p>
+</div>
+
+<div class="cluster">
+    <div class="images">
+        <img src="images/automata_fleet.jpg" title="Small fleet of robot cars" alt="Small fleet of robot cars" class="pic">
+    </div>
+</div>
+
+<div class="textbox">
+    <p>Each car was equipped with a 2D LiDAR, a sensor that can return the distance to obstacles relative to the car. With this input, we implemented obstacle avoidance and a greedy local planner, basically programming the car to go forwards without crashing for as long as possible. Then we added a particle filter for localization, which uses the best guess of the car's pose from the wheel rotations along with how well the LiDAR scans match a known map to estimate its actual pose.</p>
+</div>
+
+<div class="cluster">
+    <div class="images">
+        <img src="images/particle_filter.gif" title="Particle filter localization" alt="Particle filter localization" class="pic">
+    </div>
+</div>
+
+<div class="textbox">
+    <p>The next task was to add Simulatenous Localization and Mapping (SLAM), a hot topic in all self-driving applications. We did this, and then we added a global planner which creates a path from point A to B and follows it using the local planner with a dynamic goal position. My team chose to add human social awareness to all of this work, resulting in paths that are safe and trustworthy around people.</p>
+</div>
+
+<div class="cluster">
+    <div class="images">
+        <img src="images/social_planner.png" title="Social planner scenarios" alt="Social planner scenarios" class="pic">
+    </div>
+</div>
+
+<div class="textbox">
+    <p><a href=https://drive.google.com/file/d/1m-5rTb00ti8cOm5VfV1MI6P2FpdpXlu2/view?usp=sharing>Here is a video of our social planner in action.</a> Overall, this class was a great step outside of my comfort zone, focusing on mobile robots rather than manipulators. All of our C++ code can be found <a href=https://github.com/alexnavtt/cs393r_starter>here</a>.</p>
+</div>
+
+<h1>
+<a href="manipulators">< Prev</a> 
+<a href="../"> Home </a> 
+<a href="scorpio">Next ></a>
+</h1>
+
+<!-- Footer -->
+<div class="footer">
+    <a href=../MarkJenningsResume.pdf target="_blank"><p>Check out my resume.</p></a>
+    <p>&#169; <!-- copyright symbol -->
+    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    by Mark Jennings</p>
+</div>
+
+</body>
+</html>
