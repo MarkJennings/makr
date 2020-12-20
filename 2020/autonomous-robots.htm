@@ -43,7 +43,7 @@
 </div>
 
 <div class="textbox">
-    <p>Each car was equipped with a 2D LiDAR, a sensor that can return the distance to obstacles relative to the car. With this input, we implemented obstacle avoidance and a greedy local planner, basically programming the car to go forwards without crashing for as long as possible. Then we added a particle filter for localization, which uses the best guess of the car's pose from the wheel rotations along with how well the LiDAR scans match a known map to estimate its actual pose.</p>
+    <p>Each car was equipped with a 2D LiDAR, a sensor that can return the distance to objects relative to the car. With this input, we implemented obstacle avoidance and a greedy local planner, basically programming the car to go forwards without crashing for as long as possible. Then we added a particle filter for localization, which uses the best guess of the car's pose from the wheel rotations along with how well the LiDAR scans match a known map to estimate its actual pose:</p>
 </div>
 
 <div class="cluster">
@@ -53,7 +53,7 @@
 </div>
 
 <div class="textbox">
-    <p>The next task was to add Simultaneous Localization and Mapping (SLAM), a hot topic in all self-driving applications. We did this, and then we programmed a global planner which creates a path from point A to B and follows it using the local planner with a dynamic goal position. My team chose to also add human social awareness to all of this work, resulting in paths that are safe and trustworthy around people.</p>
+    <p>The next task was to add Simultaneous Localization and Mapping (SLAM), a hot topic in all self-driving applications. After this, we programmed a global planner which creates a path from point A to B and follows it using the local planner with a dynamic goal. My team chose to also add human social awareness in the end, resulting in paths that are safe and trustworthy around people.</p>
 </div>
 
 <div class="cluster">
@@ -63,7 +63,7 @@
 </div>
 
 <div class="textbox">
-    <p><a href=https://drive.google.com/file/d/1m-5rTb00ti8cOm5VfV1MI6P2FpdpXlu2/view?usp=sharing>Here is a video of our social planner in action.</a> Overall, this class was a great step outside of my comfort zone, focusing on mobile robots rather than manipulators. All of our C++ code can be found <a href=https://github.com/alexnavtt/cs393r_starter>here</a>.</p>
+    <p><a href="https://drive.google.com/file/d/1m-5rTb00ti8cOm5VfV1MI6P2FpdpXlu2/view?usp=sharing" target="_blank">Here is a video of our social planner in action.</a> Overall, this class was a great step outside of my comfort zone, focusing on mobile robots rather than manipulators. All of our C++ code can be found <a href="https://github.com/alexnavtt/cs393r_starter" target="_blank">here</a>.</p>
 </div>
 
 <h1>
