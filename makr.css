@@ -1,3 +1,9 @@
+/*
+Disclaimer: I knew very little about CSS when I wrote this site.
+I still don't know much, but I can at least tell you that an
+element should not be nested in 3 unnecessary divs.
+*/
+
 * {
     margin: 0;
     padding: 0;

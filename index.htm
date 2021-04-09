@@ -36,23 +36,13 @@
 </div>
 
 <br>
-<br><h1 id="splash">My name is Mark Jennings.</h1><br>
+<br><h1 id="splash">Hello, world!</h1><br>
 <script>
     (function(){
-        // Choose a random welcome text to replace the string above
-        switch(Math.floor((Math.random()*3)+1)) {
-            case 1:
-                text = "Mark + Maker = MAKR";
-                break;
-            case 2:
-                text = "Mark | Maker";
-                break;
-            case 3:
-                text = "Hello, world!";
-                break;
-            default:
-                text = "Hey there, I'm Mark.";
-        }
+        if(Math.random() > 0.01)
+            text = "Mark | Maker";
+        else
+            text = "Super secret splash text (1% chance!)";
         document.getElementById("splash").innerHTML = text;
     })();
 </script>
