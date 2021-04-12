@@ -33,7 +33,7 @@ if (is_mobile)
         makePortrait();
     else
         makeLandscape();
-    // Add a media query change listener
+    // Add a media query change listene
     mql.addListener(function(m){
         if(m.matches)
             makePortrait();
