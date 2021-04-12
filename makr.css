@@ -49,6 +49,8 @@ p  {
     width: 33%;
     /* Modify variable if JS indicates browser is mobile */
     width: var(--pWidth);
+    /* round edges */
+    border-radius: 25px;
 }
 
 .project:hover {
@@ -149,6 +151,8 @@ p  {
 .pic {
     width: 50%;
     width: var(--picWidth);
+    /* round edges */
+    border-radius: 25px;
 }
 
 /* 2 columns if low width */
