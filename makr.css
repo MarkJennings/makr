@@ -1,7 +1,7 @@
 /*
 Disclaimer: I knew very little about CSS when I wrote this site.
 I still don't know much, but I can at least tell you that an
-element should not be nested in 3 unnecessary divs.
+element should not be nested in 3-4 unnecessary divs.
 */
 
 * {
@@ -83,7 +83,7 @@ p  {
     width: 100%;
     height: 15vh;
     height: var(--bHeight);
-    background-color:#97dede;
+    background-color: #97dede;
     margin-top: 2%;
 }
 .name {
