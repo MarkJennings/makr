@@ -171,7 +171,7 @@ p  {
 /* Stops images from spreading out too much */
 @media screen and (min-width: 800px) {
     .grid_pics {width: 800px;}
-    .name {width: 800px;}
+    .name {width: 87.5vw;}
     .textbox {width: 750px;}
     .images {width: 750px;}
 }
@@ -179,7 +179,6 @@ p  {
 @media screen and (min-width: 2000px) {
     .grid_pics {width: 50vw;}
     .description{width: 50vw;}
-    .name {width: 50vw;}
     .textbox {width: 50vw;}
     .images {width: 50vw;}
 }
