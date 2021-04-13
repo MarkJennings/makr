@@ -107,6 +107,15 @@ p  {
     display: inline-block;
 }
 
+/* Navigation icons above footer */
+.nav{
+    height:28px;
+}
+.nav:hover {
+    opacity:0.6;
+    transition:opacity 0.25s;
+}
+
 /* End of website */
 .footer {
     width: 100%;
