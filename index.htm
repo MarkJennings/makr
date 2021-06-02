@@ -40,10 +40,10 @@
 <br><h1 id="splash">Hello, world!</h1><br>
 <script>
     (function(){
-        if(Math.random() > 0.01)
+        if(Math.random() < 0.8)
             text = "Mark | Maker";
-        else
-            text = "Super secret splash text (1% chance!)";
+        else // 20% of the time
+            text = "Pronounced <i>maker</i>, not <i>macker</i>";
         document.getElementById("splash").innerHTML = text;
     })();
 </script>
