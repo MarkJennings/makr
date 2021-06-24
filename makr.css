@@ -88,7 +88,7 @@ p  {
 }
 .name {
     display: inline-block;
-    width: 100vw;
+    width: 87.5vw;
     height: 15vh;
     height: var(--bHeight);
 }
@@ -171,7 +171,6 @@ p  {
 /* Stops images from spreading out too much */
 @media screen and (min-width: 800px) {
     .grid_pics {width: 800px;}
-    .name {width: 87.5vw;}
     .textbox {width: 750px;}
     .images {width: 750px;}
 }
