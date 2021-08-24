@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>MAKR | Scorpio Research</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../mobile.js"></script>
+<link rel="stylesheet" type="text/css" href="../makr.css">
+<!-- https://favicon.io/favicon-generator/ -- m, circle, amita, 150 -->
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+<link rel="manifest" href="../favicon/site.webmanifest">
+<!-- Roboto font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- MAKR header -->
+<a href="../index.htm">
+<div class="banner">
+    <div class="name">
+        <div class="makr">
+            <div class="letter"><img src="../banner/M.png" style="height:100%"></div>
+            <div class="letter"><img src="../banner/A.png" style="height:100%"></div>
+            <div class="letter"><img src="../banner/K.png" style="height:100%"></div>
+            <div class="letter"><img src="../banner/R.png" style="height:100%"></div>
+        </div>
+    </div>
+</div>
+</a>
+
+<div class="textbox">
+    <br><h1>Scorpio Research</h1><br>
+    <p>Scorpio is a passively-balanced robotic manipulator developed by <a href="../2018/apptronik.htm" target="_blank">Apptronik</a>, an Austin based robotics company. Springs embedded in the robot compensate for the weight of a given payload in all configurations. As part of my graduate research, I developed a controller on this system for collaborative assembly tasks. </p>
+    <p>Prior to my involvement, the robot was capable of scripting to joint states and Cartesian poses:</p>
+</div>
+
+<div class="cluster">
+    <div class="images">
+        <img src="images/scorpio_script.gif" title="Scorpio workspace demo" alt="Scorpio workspace demo" class="pic" style="width:60%;">
+    </div>
+</div>
+
+<div class="textbox">
+    <p>The <a href="https://ros.org/" target="_blank">Robot Operating System</a> (ROS) was used to control Scorpio. ROS is an open-source project connecting the global robotics community to control a wide variety of robots and interface with all kinds of sensors and peripheral hardware.</p>
+    <p>I made a ROS package that "jogs" the robot, taking Cartesian joint velocity inputs and streaming joint state commands to the robot using an inverse Jacobian method. Scorpio has 7 degrees of freedom, one more than is required for a given Cartesian pose. This redundancy was used to stay away from joint limits while jogging. Here I am using a 3D mouse to teleoperate Scorpio:</p>
+</div>
+
+<div class="cluster">
+    <div class="images">
+        <img src="images/scorpio_teleop.gif" title="Scorpio teleoperation" alt="Scorpio teleoperation" class="pic" style="width:60%;">
+    </div>
+</div>
+
+<div class="textbox">
+    <p>My research focused on improving precision insertion tasks with heavy payloads. A bowling ball was used as the payload, with a raw spaghetti noodle at the base as the insertion member. These objects were chosen to model a DOE application while conveying the forces involved with the task.</p>
+    <p>My controller compensated for the weight of the payload and actively removed a portion of its inertia. Operator interaction forces were detected with a Force/Torque (FT) sensor, and an admittance control law was used to convert these measurements to jogger inputs.</p>
+</div>
+
+<div class="cluster">
+    <div class="images">
+        <img src="images/scorpio_controller.png" title="Scorpio control block diagram" alt="Scorpio control block diagram" class="pic" style="width:80%;">
+    </div>
+</div>
+
+<div class="textbox">
+    <p>To validate this system in the collaborative task, an experiment was conducted to compare Scorpio against passive systems or without any augmentation. I ran a pilot study with untrained operators, challenging them to blindly insert the fragile pin into a hole at the base of a hemispherical cup. Each participant was given 3 tries with several systems, which also included a passive gantry with counterweight to hold the payload weight.</p>
+    <p>In the recording below I am performing the experimental task. On the right, the interaction forces are shown in the standard ROS visualization package. While it might look like I succeeded, the pin actually broke at the last second :(</p>
+</div>
+
+<div class="cluster">
+    <div class="images">
+        <img src="images/scorpio_collab.gif" title="Scorpio collaborative assembly" alt="Scorpio collaborative assembly" class="pic" style="width:80%;">
+    </div>
+</div>
+
+<div class="textbox">
+    <p>This pilot study was small and really only useful to gather operator feedback for future iterations of this controller. Additional experimentation should be conducted on this system with different controller parameters and a larger sample size. However, the preliminary results are promising, showing an increase in operator success and less time to complete the task.</p>
+</div>
+
+<div class="cluster">
+    <div class="images">
+        <img src="images/scorpio_success.png" title="Task performance data" alt="Task performance data" class="pic" style="width:60%;">
+    </div>
+</div>
+
+<div class="textbox">
+    <p>This research is covered in much more depth in my Master's thesis - Manipulator Control in Collaborative Assembly. Hopefully I can link that here in the future. For now, I am off to work at Los Alamos National Lab, the funding agent behind this research.</p>
+</div>
+
+<h1>
+<a href="../index.htm"><img src="../icons/home.png" class="nav"></a>  
+<a href="../2020/autonomous-robots.htm"><img src="../icons/right.png" class="nav"></a>
+</h1>
+
+<!-- Footer -->
+<div class="footer">
+    <a href=../MarkJenningsResume.pdf target="_blank"><p>Check out my resume.</p></a>
+    <p>&#169; <!-- copyright symbol -->
+    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+    by Mark Jennings</p>
+</div>
+
+</body>
+</html>
