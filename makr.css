@@ -17,7 +17,7 @@ body {
     padding: 0;
     text-align: center;
     overflow-x:hidden;
-    font-size: 18px;
+    font-size: 1.8vmin;
 }
 
 /* Link styling */
@@ -38,7 +38,6 @@ p  {
     line-height: 1.4em;
     margin-bottom: 2%;
     font-size: 100%;
-    font-size: var(--textSize);
 }
 
 /* All images have some padding */
@@ -50,7 +49,7 @@ p  {
     /* Modify variable if JS indicates browser is mobile */
     width: var(--pWidth);
     /* round edges */
-    border-radius: 25px;
+    border-radius: 2vmin;
 }
 
 .project:hover {
@@ -107,7 +106,7 @@ p  {
 
 /* Navigation icons above footer */
 .nav{
-    height:28px;
+    height:3vmin;
 }
 .nav:hover {
     opacity:0.6;
@@ -159,7 +158,7 @@ p  {
     width: 50%;
     width: var(--picWidth);
     /* round edges */
-    border-radius: 25px;
+    border-radius: 2vmin;
 }
 
 /* 2 columns if low width */
@@ -175,8 +174,12 @@ p  {
 /* For large screens, such as 4k */
 @media screen and (min-width: 2000px) {
     .grid_pics {width: 50vw;}
-    .description{width: 50vw;}
     .textbox {width: 50vw;}
     .images {width: 50vw;}
 }
-/* TODO widescreen monitors */
+/* For ultrawide monitors */
+@media screen and (min-width: 2000px) and (min-aspect-ratio: 2/1) {
+    .grid_pics {width: 35vw;}
+    .textbox {width: 35vw;}
+    .images {width: 35vw;}
+}
