@@ -18,12 +18,21 @@ function makeLandscape() {
     root.style.setProperty('--bHeight', 10 + "vh");
     root.style.setProperty('--picWidth', 50 + "%");
 }
+function makeMobile() {
+    root.style.setProperty('--textSize', 18 + "px");
+    root.style.setProperty('--picRadius', 25 + "px");
+    root.style.setProperty('--navHeight', 25 + "px");
+}
+function makeDesktop() {
+    root.style.setProperty('--textSize', 1.8 + "vmin");
+    root.style.setProperty('--picRadius', 2 + "vmin");
+    root.style.setProperty('--navHeight', 3 + "vmin");
+}
 
 // True if mobile browser or device detected
-var is_mobile = (/Mobi|Android/i.test(navigator.userAgent));
-
-if (is_mobile)
+if (/Mobi|Android/i.test(navigator.userAgent))
 {
+    makeMobile();
     // Initialize media query list monitoring orientation
     var mql = window.matchMedia("(orientation: portrait)");
     // If it matches, we're in portrait
@@ -39,6 +48,10 @@ if (is_mobile)
             makeLandscape();
     });
 }
-// Default to landscape
-else
+// Not mobile
+else {
+    makeDesktop();
+    // Default to landscape
     makeLandscape();
+
+}

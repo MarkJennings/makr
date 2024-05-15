@@ -17,7 +17,8 @@ body {
     padding: 0;
     text-align: center;
     overflow-x:hidden;
-    font-size: 1.8vmin;
+    font-size: 18px;
+    font-size: var(--textSize);
 }
 
 /* Link styling */
@@ -48,8 +49,7 @@ p  {
     width: 33%;
     /* Modify variable if JS indicates browser is mobile */
     width: var(--pWidth);
-    /* round edges */
-    border-radius: 2vmin;
+    border-radius: var(--picRadius);
 }
 
 .project:hover {
@@ -107,6 +107,8 @@ p  {
 /* Navigation icons above footer */
 .nav{
     height:3vmin;
+    height: 25px;
+    height: var(--navHeight);
 }
 .nav:hover {
     opacity:0.6;
@@ -157,9 +159,11 @@ p  {
 .pic {
     width: 50%;
     width: var(--picWidth);
-    /* round edges */
-    border-radius: 2vmin;
+    border-radius: var(--picRadius);
 }
+
+/* Responsive scaling if non-mobile */
+@if 
 
 /* 2 columns if low width */
 @media screen and (max-width: 600px) {
