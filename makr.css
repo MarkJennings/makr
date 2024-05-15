@@ -58,8 +58,6 @@ p  {
     transition:opacity 0.25s;
 }
 
-
-
 /* Includes padding in pic sizing */
 * {box-sizing: border-box}
 
@@ -181,3 +179,4 @@ p  {
     .textbox {width: 50vw;}
     .images {width: 50vw;}
 }
+/* TODO widescreen monitors */
