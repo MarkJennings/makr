@@ -162,9 +162,6 @@ p  {
     border-radius: var(--picRadius);
 }
 
-/* Responsive scaling if non-mobile */
-@if 
-
 /* 2 columns if low width */
 @media screen and (max-width: 600px) {
     .project{width: 50%;}
